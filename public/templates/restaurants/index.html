@@ -1,0 +1,5 @@
+<a href="/#">Index</a>
+
+<ul ng-repeat="restaurant in restaurants">
+  <li><a ng-click="viewRestaurant(restaurant.id)">{{ restaurant.name }} ({{restaurant.id}})</a></li>
+</ul>
