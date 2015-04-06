@@ -4,6 +4,7 @@
 # Angular about the existence of our application.
 @restauranteur = angular.module('restauranteur', ['ngRoute']);
 
+
 # This routing directive tells Angular about the default
 # route for our application. The term "otherwise" here
 # might seem somewhat awkward, but it will make more
@@ -13,11 +14,13 @@
   when('/restaurants', {
     templateUrl: '../templates/restaurants/index.html',
     controller: 'RestaurantIndexCtrl'
+
     }).
-    when('/restaurants/:id', {
-      templateUrl: '../templates/restaurants/show.html',
-      controller: 'RestaurantShowCtrl'
-      }).
+  when('/restaurants/:id', {
+    templateUrl: '../templates/restaurants/show.html',
+    controller: 'RestaurantShowCtrl'
+    }).
+
     otherwise({
       templateUrl: '../templates/home.html',
       controller: 'HomeCtrl'
