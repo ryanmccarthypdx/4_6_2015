@@ -1,3 +1,4 @@
-@restauranteur.controller 'HomeCtrl', ['$scope', ($scope) ->;
+@restauranteur.controller 'HomeCtrl', ['$scope', ($scope) ->
+  $scope.foo = 'bar'
 
 ]
