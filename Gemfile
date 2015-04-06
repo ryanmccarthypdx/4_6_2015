@@ -23,7 +23,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'jasmine'
 
-gem 'coffee-preprocessor'
 
 
 group :development, :test do
